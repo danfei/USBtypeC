@@ -1,0 +1,160 @@
+(pcb /home/dan/Documents/USBtypeC/USBtypeC.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.2+dfsg1-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  149800 -119000  133000 -119000  133000 -103400  150100 -103400
+            150100 -119000  149800 -119000  149800 -119000)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 300)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component USBtypeC:USBtypeC
+      (place P1 136800 -111700 front 270 (PN USB_TYPEC))
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x06
+      (place P2 148501 -105004 front 0 (PN CONN_01X06))
+    )
+  )
+  (library
+    (image USBtypeC:USBtypeC
+      (outline (path signal 150  -3820 4010  4580 4010))
+      (outline (path signal 150  4580 4010  4580 2860))
+      (outline (path signal 150  4580 2860  4580 2830))
+      (outline (path signal 150  -3820 4010  -5220 4010))
+      (outline (path signal 150  -5220 4010  -5220 2810))
+      (outline (path signal 150  -5220 2800  -5220 -3710))
+      (outline (path signal 150  -5220 -3710  -4640 -3710))
+      (outline (path signal 150  4580 2840  4580 -3710))
+      (outline (path signal 150  4580 -3710  4030 -3710))
+      (outline (path signal 150  -4640 -3710  4020 -3710))
+      (pin Oval[A]Pad_1000x1800_um 1 -4640 -1390)
+      (pin Oval[A]Pad_1000x1800_um 2 4000 -1390)
+      (pin Oval[A]Pad_1000x2100_um 3 -4640 2790)
+      (pin Oval[A]Pad_1000x2100_um 4 4000 2790)
+      (pin Rect[T]Pad_300x1140_um B8 -2070 3360)
+      (pin Rect[T]Pad_300x1140_um A5 -1570 3360)
+      (pin Rect[T]Pad_300x1140_um B7 -1070 3360)
+      (pin Rect[T]Pad_300x1140_um A6 -570 3360)
+      (pin Rect[T]Pad_300x1140_um A7 -70 3360)
+      (pin Rect[T]Pad_300x1140_um B6 430 3360)
+      (pin Rect[T]Pad_300x1140_um A8 930 3360)
+      (pin Rect[T]Pad_300x1140_um B5 1430 3360)
+      (pin Rect[T]Pad_300x1140_um A1 -3670 3360)
+      (pin Rect[T]Pad_300x1140_um B12 -3370 3360)
+      (pin Rect[T]Pad_300x1140_um A4 -2870 3360)
+      (pin Rect[T]Pad_300x1140_um B9 -2570 3360)
+      (pin Rect[T]Pad_300x1140_um B4 1930 3360)
+      (pin Rect[T]Pad_300x1140_um A9 2230 3360)
+      (pin Rect[T]Pad_300x1140_um B1 2730 3360)
+      (pin Rect[T]Pad_300x1140_um A12 3030 3360)
+      (keepout "" (circle F.Cu 650 -3210 2290))
+      (keepout "" (circle B.Cu 650 -3210 2290))
+      (keepout "" (circle F.Cu 650 2570 2290))
+      (keepout "" (circle B.Cu 650 2570 2290))
+    )
+    (image Pin_Headers:Pin_Header_Straight_1x06
+      (outline (path signal 50  -1750 1750  -1750 -14450))
+      (outline (path signal 50  1750 1750  1750 -14450))
+      (outline (path signal 50  -1750 1750  1750 1750))
+      (outline (path signal 50  -1750 -14450  1750 -14450))
+      (outline (path signal 150  1270 -1270  1270 -13970))
+      (outline (path signal 150  1270 -13970  -1270 -13970))
+      (outline (path signal 150  -1270 -13970  -1270 -1270))
+      (outline (path signal 150  1550 1550  1550 0))
+      (outline (path signal 150  1270 -1270  -1270 -1270))
+      (outline (path signal 150  -1550 0  -1550 1550))
+      (outline (path signal 150  -1550 1550  1550 1550))
+      (pin Rect[A]Pad_2032x1727.2_um 1 0 0)
+      (pin Oval[A]Pad_2032x1727.2_um 2 0 -2540)
+      (pin Oval[A]Pad_2032x1727.2_um 3 0 -5080)
+      (pin Oval[A]Pad_2032x1727.2_um 4 0 -7620)
+      (pin Oval[A]Pad_2032x1727.2_um 5 0 -10160)
+      (pin Oval[A]Pad_2032x1727.2_um 6 0 -12700)
+    )
+    (padstack Oval[A]Pad_1000x1800_um
+      (shape (path F.Cu 1000  0 -400  0 400))
+      (shape (path B.Cu 1000  0 -400  0 400))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1000x2100_um
+      (shape (path F.Cu 1000  0 -550  0 550))
+      (shape (path B.Cu 1000  0 -550  0 550))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_2032x1727.2_um
+      (shape (path F.Cu 1727.2  -152.4 0  152.4 0))
+      (shape (path B.Cu 1727.2  -152.4 0  152.4 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2032x1727.2_um
+      (shape (rect F.Cu -1016 -863.6 1016 863.6))
+      (shape (rect B.Cu -1016 -863.6 1016 863.6))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_300x1140_um
+      (shape (rect F.Cu -150 -570 150 570))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net /SBU
+      (pins P1-B8 P1-A8 P2-3)
+    )
+    (net /CC
+      (pins P1-A5 P1-B5 P2-4)
+    )
+    (net "/D-"
+      (pins P1-B7 P1-A7 P2-5)
+    )
+    (net /D+
+      (pins P1-A6 P1-B6 P2-6)
+    )
+    (net GND
+      (pins P1-A1 P1-B12 P1-B1 P1-A12 P2-1)
+    )
+    (net /VBUS
+      (pins P1-A4 P1-B9 P1-B4 P1-A9 P2-2)
+    )
+    (class kicad_default "" /CC /D+ "/D-" /SBU /VBUS GND
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 300)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
